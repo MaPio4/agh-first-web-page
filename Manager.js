@@ -59,6 +59,7 @@ class Manager {
 
     setCurrentImageIndex(p_index) {
         this.currentImageIndex = p_index;
+        this.currentPage = this.pages[this.currentPageIndex];
     }
 
 }
@@ -66,9 +67,9 @@ class Manager {
 var onPageLoad = function() {
     let pages = [
         new Page("Witaj na stronie o telefonach!", "Witaj na stronie o telefonach. Tutaj znajdziesz wiele przydatnych informacji na temat flagowych modeli telefonów komórkowych. Jeżeli zastanawiasz się, który model wybrać - ta strona jest właśnie dla Ciebie!", "images/index/", 3),
-        new Page("Samsung","To jest strona o samsungu", "images/samsung/", 3),
-        new Page("Motorola","To jest strona o motoroli", "images/motorola/", 3),
-        new Page("Sony","To jest strona o sony", "images/sony/", 3)
+        new Page("Samsung","To jest strona o samsungu", "images/samsung/", 4),
+        new Page("Motorola","To jest strona o motoroli", "images/motorola/", 4),
+        new Page("Sony","To jest strona o sony", "images/sony/", 4)
     ]
 
     manager = new Manager(pages);
