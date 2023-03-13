@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>strona testowa video audio</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="layout2.css" >
+
+</head>
+
+<script>
+  function czas() {
+    if (!document.write)
+
+      var godzina, minuty, sekundy, dzien, licz_dzien, miesiac, dzisiaj, rok, tekst_miesiac, tekst_dzien;
+    dzisiaj = new Date();
+    godzina=dzisiaj.getHours();
+    minuty=dzisiaj.getMinutes();
+    sekundy=dzisiaj.getSeconds();
+    rok=dzisiaj.getYear();
+    dzien=dzisiaj.getDate();
+    licz_dzien=dzisiaj.getDay();
+    if (licz_dzien==0) {tekst_dzien="Niedziela"}
+    if (licz_dzien==1) {tekst_dzien="Poniedziałek"}
+    if (licz_dzien==2) {tekst_dzien="Wtorek"}
+    if (licz_dzien==3) {tekst_dzien="Środa"}
+    if (licz_dzien==4) {tekst_dzien="Czwartek"}
+    if (licz_dzien==5) {tekst_dzien="Piątek"}
+    if (licz_dzien==6) {tekst_dzien="Sobota"}
+    miesiac=dzisiaj.getMonth();
+    if (miesiac==0) {tekst_miesiac="styczeń"}
+    if (miesiac==1) {tekst_miesiac="luty"}
+    if (miesiac==2) {tekst_miesiac="marzec"}
+    if (miesiac==3) {tekst_miesiac="kwiecień"}
+    if (miesiac==4) {tekst_miesiac="maj"}
+    if (miesiac==5) {tekst_miesiac="czerwiec"}
+    if (miesiac==6) {tekst_miesiac="lipiec"}
+    if (miesiac==7) {tekst_miesiac="sierpień"}
+    if (miesiac==8) {tekst_miesiac="wrzesień"}
+    if (miesiac==9) {tekst_miesiac="październik"}
+    if (miesiac==10) {tekst_miesiac="listopad"}
+    if (miesiac==11) {tekst_miesiac="grudzień"}
+    if (dzien < 10) {dzien="0"+dzien;}
+    if (godzina < 10) {godzina="0"+godzina;}
+    if (minuty < 10) {minuty="0"+minuty;}
+    if (sekundy < 10) {sekundy="0"+sekundy;}
+    pelnyczas=tekst_dzien + ",<br>" + dzien +"&nbsp;"+ tekst_miesiac+"&nbsp;"+rok+"<br>"
+            + godzina+":"+minuty+":"+sekundy;
+    if (document.layers){
+      document.layers.Data.document.write(pelnyczas)
+      document.layers.Data.document.close()
+    }
+
+    Data.innerHTML=pelnyczas
+    setTimeout("czas()",500)
+  }
+</script>
+<body onload="czas()">
+
+<header>
+  <h2>Cities</h2>
+</header>
+
+<section >
+  <nav>
+    <ul>
+      <li><a href="#">London</a></li>
+      <li><a href="#">Paris</a></li>
+      <li><a href="#">Tokyo</a></li>
+    </ul>
+    <span id="Data" ></span>
+  </nav>
+  <article>
+    <h1>London</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+<audio controls>
+  <source src="horse.ogg" type="audio/ogg">
+  <source src="horse.mp3" type="audio/mpeg">
+  Your browser does not support the audio tag.
+</audio> 
+
+<video width="320" height="240" controls>
+  <source src="movie.mp4" type="video/mp4">
+  <source src="movie.ogg" type="video/ogg">
+  Your browser does not support the video tag.
+</video> 
+
+ <picture>
+  <source media="(min-width:650px)" srcset="img_pink_flowers.jpg">
+  <source media="(min-width:465px)" srcset="img_white_flower.jpg">
+  <img src="img_orange_flowers.jpg" alt="Flowers" style="width:auto;">
+</picture> 
+
+<img src="workplace.jpg" alt="Workplace" usemap="#workmap" width="400" height="379">
+
+<map name="workmap">
+  <area shape="rect" coords="34,44,270,350" alt="Computer" href="index1.html">
+  <area shape="rect" coords="290,172,333,250" alt="Phone" href="index2.html">
+  <area shape="circle" coords="337,300,44" alt="Cup of coffee" href="#">
+</map>
+
+</article>
+
+</section>
+
+<footer>
+  <p>Footer</p>
+</footer>
+
+</body>
+</html>
+

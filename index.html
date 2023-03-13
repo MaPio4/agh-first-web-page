@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="description" content="Strona internetowa o modelach telefonów.">
+        <meta name="keywords" content="telefony, telefon, samsung, lg">
+        <meta name="author" content="Mateusz Pióro">
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="index.css">
+        <script src="ImagesChanger.js"></script>
+        <script src="Page.js"></script>
+        <script src="Manager.js"></script>
+        <script src="SendRequest.js"></script>
+    </head>
+    <body onload="onPageLoad();" >
+        <div id="main_frame" >
+
+            <div id="main_frame_margin">
+
+                <div id="top_bar_frame">
+
+                    <div id="hello_message">
+                        <h1 id="title_message"></h1>
+                    </div>
+
+                </div>
+
+                <div id="main_content_frame">
+                    <div id="navi_frame">
+                        <div id="navi_list">
+                            <h2 class="navi_element" onclick="getManager().switchPage(1)"> Samsung </h2>
+                            <h2 class="navi_element" onclick="getManager().switchPage(2)"> Motorola </h2>
+                            <h2 class="navi_element" onclick="getManager().switchPage(3)"> Sony </h2>
+                        </div>
+                        <div id="new_phone_request">
+                            <form>
+                                <h2 id="request_title">Daj nam znać jakiego telefonu brakuje!</h2>
+                                <p>Podaj model telefonu:</p>
+                                <input type="text" id="request_phone_name">
+                                <p>Podaj swój nickname:</p>
+                                <input type="text" id="request_username">
+                                <br><br>
+                                <input type="button" value="Wyślij" id="request_button" onclick="onSubmit()">
+                                <br><br>
+                                <p id="request_message"></p>
+                            </form>
+                        </div>
+                    </div>
+                    <div id="content_frame">
+                        <div id="content_text_frame">
+                            <p id="content_text"></p>
+                        </div>
+                        <div id="content_image">
+                            <img id="content_image_img" src="images/index/image_1.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+
+                <div id="footer_frame">
+                    <div id="copyrigth_frame">
+                        <p id="copyright_text">Strona o telefonach &#169 2023</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

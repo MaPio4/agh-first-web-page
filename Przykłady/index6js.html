@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="Content-type" content="text/html; charset=UTF-8" />
+  <meta name="Description" content="Strona poświęcoana zajęciom www" />
+  <meta name="Keywords" content="WWW;test" />
+  <meta name="Author" content="MJ" />
+  <title>strona testowa js</title>
+  
+   <link rel="stylesheet" href="layout5.css" >
+  
+
+</head>
+<body>
+
+<p id="demo"></p>
+<button type="button"
+onclick="document.getElementById('demo').innerHTML = Date()">
+Click me to display Date and Time.</button>
+<!---->
+<!---->
+<!--  <p>Player 1: Chris</p>-->
+  <script>
+	var para = document.querySelector('p');
+
+	para.addEventListener('click', updateName);
+
+	function updateName() {
+	  var name = prompt('Enter a new name');
+	  para.textContent = 'Player 1: ' + name;
+	  <!-- .innerHTML -->
+	  para.style.color = "red";
+	}
+  </script>	
+</body>
+</html>
