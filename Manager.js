@@ -67,9 +67,9 @@ class Manager {
 var onPageLoad = function() {
     let pages = [
         new Page("Witaj na stronie o telefonach!", "Witaj na stronie o telefonach. Tutaj znajdziesz wiele przydatnych informacji na temat flagowych modeli telefonów komórkowych. Jeżeli zastanawiasz się, który model wybrać - ta strona jest właśnie dla Ciebie!", "images/index/", 3),
-        new Page("Samsung","To jest strona o samsungu", "images/samsung/", 4),
-        new Page("Motorola","To jest strona o motoroli", "images/motorola/", 4),
-        new Page("Sony","To jest strona o sony", "images/sony/", 4)
+        new Page("Samsung","Seria produktów koreańskiej firmy Samsung, obejmująca smartfony i tablety. Pierwszy model „Galaxy” pojawił się w połowie 2009 roku jako jeden z trzech sztandarowych serii Samsunga, obok ówczesnej serii „Wave” (S8500) oraz wysłużonej już „Omnia” (pierwszy model – i900). Kolejnym modelem serii jest dostępny w kolorach: czarnym (Sapphire Black), stalowym (Titanium Grey), białym, brązowym (Amber Brown), niebieskim (Pebble Blue) i czerwonym (Garnet Red) oraz w wersji mini Samsung Galaxy S III oraz Galaxy Note II.", "images/samsung/", 4),
+        new Page("Motorola","seria produktów koreańskiej firmy Samsung, obejmująca smartfony i tablety[1]. Pierwszy model „Galaxy” pojawił się w połowie 2009 roku jako jeden z trzech sztandarowych serii Samsunga, obok ówczesnej serii „Wave” (S8500) oraz wysłużonej już „Omnia” (pierwszy model – i900). Kolejnym modelem serii jest dostępny w kolorach: czarnym (Sapphire Black), stalowym (Titanium Grey), białym, brązowym (Amber Brown), niebieskim (Pebble Blue) i czerwonym (Garnet Red)[2] oraz w wersji mini[3] Samsung Galaxy S III oraz Galaxy Note II.", "images/motorola/", 4),
+        new Page("Sony","Pierwszym urządzeniem Sony z serii Xperia był smartfon Xperia X1 wydany we wrześniu 2008 roku. Drugim był wydany rok później model Xperia X2 wyposażony w aparat 8,1 MP, Wi-Fi oraz GPS. W tym czasie nastąpił wzrost zainteresowania konsumentów smartfonami. Model Xperia Pureness był telefonem z przezroczystym wyświetlaczem, nie zawierał kamery i był dostępny u wybranych sprzedawców w wybranych miastach.", "images/sony/", 4)
     ]
 
     manager = new Manager(pages);
